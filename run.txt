@@ -1,0 +1,56 @@
+====================================================================
+🌾 KRISHI AI - ALL SERVICES STARTUP GUIDE & COMMANDS
+====================================================================
+
+Website (krishiAi-main) ke andar:
+- Soil AI Studio Tab          --> Port 8501 par connect hota hai
+- Plant Disease Detector Tab   --> Port 8502 par connect hota hai
+- Backend Engine & Blockchain  --> Port 5003 par connect hota hai
+- Frontend Website (Vite UI)   --> Port 5173 par chalta hai
+
+--------------------------------------------------------------------
+🚀 STEP-BY-STEP RUN COMMANDS (4 ALAG-ALAG TERMINALS MEIN RUN KAREIN)
+--------------------------------------------------------------------
+
+[TERMINAL 1] 🌱 Soil Classification Project (Port 8501)
+---------------------------------------------------------
+cd g:\Krishi_AI\Soil_classification_project
+.\.venv\Scripts\Activate.ps1
+streamlit run app.py --server.port 8501
+
+
+[TERMINAL 2] 🌾 Plant Disease Detection Project (Port 8502)
+-------------------------------------------------------------
+cd g:\Krishi_AI\AI-Disease-Detection-master
+.\.venv\Scripts\Activate.ps1
+streamlit run app.py --server.port 8502
+
+
+[TERMINAL 3] ⚙️ KrishiAI Backend Server (Port 5003)
+-----------------------------------------------------
+cd g:\Krishi_AI\krishiAi-main\backend
+npm start
+
+
+[TERMINAL 4] 🌐 KrishiAI Website Frontend (Port 5173)
+-------------------------------------------------------
+cd g:\Krishi_AI\krishiAi-main
+npm run dev
+
+
+--------------------------------------------------------------------
+📱 MOBILE APP (Flutter Android / iOS)
+--------------------------------------------------------------------
+Agar Flutter Mobile App chalana ho:
+cd g:\Krishi_AI\krishi_ai_app
+flutter run
+
+
+--------------------------------------------------------------------
+🌐 BROWSER ACCESS URLS
+--------------------------------------------------------------------
+- Website UI:        http://localhost:5173
+- Soil Model UI:     http://localhost:8501
+- Disease Model UI:  http://localhost:8502
+- Backend API:       http://localhost:5003/api/health
+====================================================================
