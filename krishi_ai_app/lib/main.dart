@@ -1215,7 +1215,7 @@ class DashboardView extends StatelessWidget {
               ),
               _buildActionCard(
                 title: isHi ? "🌾 रोग डिटेक्टर" : "🌾 Disease AI",
-                sub: isHi ? "Gemini विज़न AI" : "Gemini Multi-Modal",
+                sub: isHi ? "रोग पहचान व निदान" : "Disease Diagnosis",
                 icon: Icons.qr_code_scanner,
                 color: Colors.amber,
                 onTap: () => onGoToTab(2),
@@ -1854,8 +1854,8 @@ Provide response ONLY in this exact JSON format:
                       ),
                       Text(
                         isHi
-                            ? "पत्ती की फोटो खींचें या अपलोड करें — Gemini AI खुद फसल व रोग की पहचान करेगा।"
-                            : "Capture or upload leaf photo — Gemini AI automatically detects crop & disease.",
+                            ? "पत्ती की फोटो खींचें या अपलोड करें — सटीक फसल व रोग की पहचान।"
+                            : "Capture or upload leaf photo for instant crop & disease diagnosis.",
                         style: const TextStyle(color: Colors.white70, fontSize: 10),
                       ),
                     ],
@@ -1973,7 +1973,7 @@ Provide response ONLY in this exact JSON format:
                           style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: KrishiColors.textMain),
                         ),
                         Text(
-                          isHi ? "Gemini AI सीधे फोटो देखकर फसल और रोग बताएगा" : "Gemini AI will inspect the photo and identify crop & disease",
+                          isHi ? "सटीक फसल व पादप रोग विश्लेषण के लिए फोटो चुनें" : "Select or capture leaf photo for disease analysis",
                           style: const TextStyle(fontSize: 9, color: KrishiColors.textMuted),
                         ),
                       ],
@@ -4152,7 +4152,7 @@ class AppDrawer extends StatelessWidget {
     final menuItems = [
       {"id": 0, "title": isHi ? "डैशबोर्ड" : "Dashboard", "sub": "Live weather & priority actions", "icon": Icons.dashboard, "color": Colors.teal},
       {"id": 1, "title": isHi ? "👨‍🌾 फार्मर ब्लॉकचेन हब" : "👨‍🌾 Farmer Blockchain Hub", "sub": "3-Factor farm telemetry & MST dispatch", "icon": Icons.shield, "color": Colors.green},
-      {"id": 2, "title": isHi ? "🌾 पादप रोग AI डिटेक्टर" : "🌾 Plant Disease Detector", "sub": "Gemini AI Multi-Modal Diagnostics", "icon": Icons.qr_code_scanner, "color": Colors.amber},
+      {"id": 2, "title": isHi ? "🌾 पादप रोग AI डिटेक्टर" : "🌾 Plant Disease Detector", "sub": isHi ? "पादप रोग पहचान व निदान" : "Plant Disease & Crop Diagnostics", "icon": Icons.qr_code_scanner, "color": Colors.amber},
       {"id": 3, "title": isHi ? "📈 3D खेत लाइव डेटा" : "Real Time Farming Data", "sub": "ESP32 IoT sensors & 3D farm telemetry", "icon": Icons.sensors, "color": Colors.blue},
       {"id": 4, "title": isHi ? "🏢 फर्टिलाइजर कंपनी" : "🏢 Fertilizer Company", "sub": "Gemini AI precision fertilizer & minting", "icon": Icons.business, "color": Colors.orange},
       {"id": 5, "title": isHi ? "💧 स्मार्ट सिंचाई" : "Smart Irrigation", "sub": "Smart water & drip allocation", "icon": Icons.water_drop, "color": Colors.cyan},
