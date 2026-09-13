@@ -30,6 +30,42 @@ Traditional farming faces immense challenges due to unscientific chemical fertil
 
 ---
 
+## 📱 Mobile Application Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="20%">
+        <b>📊 Live Dashboard</b><br/><br/>
+        <img src="assets/screenshots/dashboard.png" width="100%" alt="Dashboard" /><br/>
+        <sub>Weather Radar & Modules</sub>
+      </td>
+      <td align="center" width="20%">
+        <b>🌱 Soil AI Studio</b><br/><br/>
+        <img src="assets/screenshots/soil_analysis.png" width="100%" alt="Soil Analysis" /><br/>
+        <sub>AI Soil Classification</sub>
+      </td>
+      <td align="center" width="20%">
+        <b>📈 3D Farm & IoT</b><br/><br/>
+        <img src="assets/screenshots/3d_farm_iot.png" width="100%" alt="3D Farm Visualizer" /><br/>
+        <sub>HiveMQ Live Telemetry</sub>
+      </td>
+      <td align="center" width="20%">
+        <b>👨‍🌾 Blockchain Hub</b><br/><br/>
+        <img src="assets/screenshots/farmer_blockchain_hub.png" width="100%" alt="Farmer Hub" /><br/>
+        <sub>3-Factor Merkle Root</sub>
+      </td>
+      <td align="center" width="20%">
+        <b>🏢 Company Portal</b><br/><br/>
+        <img src="assets/screenshots/company_portal.png" width="100%" alt="Company Portal" /><br/>
+        <sub>Gemini Prescription Mint</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 🌟 Key Features & Modules
 
 ### 1. 📱 Cross-Platform Flutter Mobile Application (`krishi_ai_app`)
@@ -156,6 +192,9 @@ flowchart TD
 
 ```
 Krishi_AI/
+│
+├── assets/                      # 📸 Screenshots & visual media
+│   └── screenshots/             # Live mobile app UI showcases
 │
 ├── krishi_ai_app/               # 📱 Flutter Mobile Application
 │   ├── lib/
